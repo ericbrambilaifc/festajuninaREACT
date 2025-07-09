@@ -8,10 +8,10 @@ export default function LoginScreen() {
 
   const fazerLogin = () => {
     console.log("Nome:", name);
-    console.log("Código:", codigo);
+    console.log("Codigo:", codigo);
   };
 
-  const handleGuestLogin = () => {
+  const fazerLoginGhest = () => {
     console.log("Entrar sem login");
   };
 
@@ -45,7 +45,7 @@ export default function LoginScreen() {
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={handleGuestLogin}>
+        <TouchableOpacity onPress={fazerLoginGhest}>
           <Text style={styles.guestText}>entrar sem login</Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     borderRadius: 13,
     paddingHorizontal: 10,
     paddingVertical: 0,
-    color: "#fff",
+    color: "#CFCFCF",
     marginBottom: 15,
     textAlignVertical: "center",
   },
